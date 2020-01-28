@@ -31,25 +31,22 @@
           <h3>Deposit or withdraw funds:</h3>
           <form id="transactionForm">
             <div class="form-group">
-              <label for="new-address">Amount:</label>
-              <input type="text" type="number" class="form-control" id="new-address">
+              <label for="new-transaction-amount">Amount:</label>
+              <input type="number" class="form-control" id="new-transaction-amount">
             </div>
-            <div class="form-group">
-                <label for="music"></label>        
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="type" value="deposit" checked>
-                    Deposit
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="type" value="widthdrawal">
-                    Widthdrawal
-                  </label>
-                </div> 
+            <div class="form-group">   
+              <div class="radio">
+                <label>
+                  <input type="radio" name="type" value="deposit" checked> Deposit
+                </label>
               </div>
-            <button class="btn btn-primary">Make Transaction</button>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="type" value="withdrawal"> Withdrawal
+                </label>
+              </div> 
+            </div>
+            <button type="submit" class="btn btn-primary">Make Transaction</button>
           </form>
         </div>
     </div>
@@ -57,9 +54,8 @@
         <div class="col-md-12">
           <hr>
           <h3>Current Balance</h3>
-          <div class="balance-output">
-            <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-          </div>
+          <p class="form-control" id="balance-output"></p>
+          <div class="balance-output"></div>
         </div>
       </div>  
     </div>
